@@ -6,15 +6,16 @@
 
     <!--<meta charset="UTF-8">-->
     <title>Horoscope</title>
+    <h>Horoscope</h>
 </head>
 <body onload="findDays(1)">
 
-<!--<form action="/action_page.php">-->
-<!--<Enter Name: <input type="text" id="myField" value="" size="25">-->
-<!--</form>-->
+<form action="/action_page.php">
 
+</form>
 
-<select id="month" onchange= "findDays(this.value)">
+Name: <input type="text" id="name" value="" size="25">
+Your birthday: <select id="month" onchange= "findDays(this.value)">
     <option value="1">January</option>
     <option value="2">February</option>
     <option value="3">March</option>
@@ -31,19 +32,25 @@
 
 
 
-<select id = "days">
+<select id = "days"></select>
 
+<select id="year">
+    <script>
+        for(var i = 2017; i > 1900; i --){
+            document.write('<option value="'+i+'">'+i+'</option>');
+        }
+    </script>
 </select>
-<!--year tab?-->
-
 
 <button id="myButton" onclick="submit()">Submit</button>
 
-<div id="sign"></div>
-<div id="image"></div>
-<img src=”img/taurus.png”/>
 
-<div id="message"></div>
+<div id="display"></div>
+
+<div id="image" width ="450" height="300"></div>
+
+
+
 </body>
 
 

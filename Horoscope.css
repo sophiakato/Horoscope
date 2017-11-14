@@ -1,23 +1,64 @@
 /* style all elements in the <body> */
 body {
-    font-family: "Century Gothic";
+    font-family:"Courier New";
     vertical-align: middle;
+    font-size: 16px;
 }
 
+h{
+    text-align: center;
+    color: midnightblue;
+    font-size: 20px;
+
+    font-weight: bold;
+}
 /* style all the buttons in a page */
 button {
-    width: 50px;
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    font-family: "Courier New";
     color: darkblue;
+    margin-left: 10px;
+
+
 }
 
 /* style the element with the id “myId” */
-#myId {
-    color: powderblue;
+#display {
+    color: darkblue;
+    text-align: center;
+    font-size: 16px;
+    word-spacing: 5px;
+    padding-top: 50px;
+}
+
+#image{
+    display: block;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+
+}
+/*img {*/
+    /*background-image: url("img/stars.jpg");*/
+    /*height: 50%;*/
+    /*padding-top: 150px;*/
+    /*background-size: cover;*/
+    /*position: absolute;*/
+
+
+/*}*/
+
+#myButton{
+    vertical-align: text-bottom;
+    background-color: lightblue;
+    color: palevioletred;
 }
 
 /*style all elements with the class “fontLarge” */
 .fontLarge{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* style all p elements with the class “center” */
@@ -26,16 +67,18 @@ p.center {
     color: purple;
 }
 
+
 /* style all h1, h2 and p elements */
-h1, h2, p {
+title, h2, p {
     text-align: center;
     text-weight: bold;
+
 }
 
 body {
     background-color: lavender;
 }
-h1 {
+title {
     color: blue;
 }
 p {
@@ -44,4 +87,3 @@ p {
 #myDiv {
     font-size: 10px;
 }
-
